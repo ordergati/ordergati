@@ -1,0 +1,209 @@
+/* Mobile first queries */
+/* applies to ALL widths */
+@font-face {
+    font-family: 'Fira Sans Compressed Book';
+    src: url('../fonts/fira_sans_compressed_book.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/fira_sans_compressed_book.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/fira_sans_compressed_book.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/fira_sans_compressed_book.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/fira_sans_compressed_book.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/fira_sans_compressed_book.svg#fira_sans_compressed_book') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header_text {
+    display: none;
+}
+
+#container {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: 'Fira Sans Compressed Book';
+    line-height: 1.444444;
+    font-weight: 300;
+    letter-spacing: .4px;
+}
+
+.logo {
+    background-color: #d0393c;
+    vertical-align: bottom;
+}
+
+.gati {
+    display: block;
+}
+
+
+.slogan {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.slogan__img {
+    flex: 7 0 350px;
+    background-color: #fcf8f3;
+    min-width: 350px;
+    overflow: hidden;
+}
+
+.slogan__img img {
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.slogan__card {
+    flex: 1 0 350px;
+    background-color: #fff;
+    color: #9c6b39;
+    min-width: 350px;
+    overflow: hidden;
+}
+
+.slogan__text {
+    color: #4b3409;
+}
+
+.slogan__text h2 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.6em;
+    color: #eb6b54;
+}
+
+.slogan__text ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 0;
+    background: #fcf8f3;
+    padding: 10px .2rem;
+    border-radius: 5px;
+    box-shadow: -10px 30px 80px -40px #ebb654;
+}
+
+.slogan__text li {
+    list-style: none;
+    padding: 0.1rem 2rem;
+    margin-bottom: 0.4rem;
+    /* margin-right: 1rem;*/
+}
+
+
+.hw {
+    background-color: #FFCC66;
+}
+
+.hw__header {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 1.5rem;
+    text-align: center;
+    /*color: #d0393c;*/
+    color: #d0393c;
+    font-size: 3rem;
+}
+
+.hw__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.hw__box {
+    position: relative;
+    justify-content: space-around;
+    flex-basis: 200px;
+    max-width: 200px;
+    min-height: 125px;
+    color: #fcf8f3;
+    background-color: #d0393c;
+    /*box-shadow: 10px 10px 120px -20px rgba(235, 107, 84, 1);*/
+    box-shadow: rgba(235, 107, 84, 1.2) 0 10px 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+.hw__box__num {
+    padding-right: 15px;
+    word-spacing: 3em;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.hw__box__txt {
+
+    display: inline-block;
+    padding: 0.5em;
+    margin-left: 5px;
+    font-size: 1em;
+    line-height: 1.3em;
+    color: #FFCC66;
+}
+
+.hw__box__adr {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.rez {
+    background-color: #CC3333;
+}
+
+.rez__header {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 1.5rem;
+    text-align: center;
+    color: #FFCC66;
+    font-size: 3rem;
+}
+
+.rez__txt {
+    margin: 0 auto;
+    color: #fff;
+    width: 90%;
+    padding-bottom: 1em;
+}
+
+footer {
+    min-height: 4em;
+    background-color: #666666;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    display: inline-block;
+    padding-top: 1.2em;
+    margin-top: 0 auto;
+}
+
+@media only screen and (max-width:550px) {
+    .gati {
+        display: none;
+    }
+
+    .boxes {
+        width: 100%;
+    }
+
+}
