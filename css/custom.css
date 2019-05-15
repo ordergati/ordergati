@@ -30,10 +30,11 @@
     margin: 0;
 }
 
-.header_text p{
+.header_text p {
     display: none;
     margin: 0;
 }
+
 #container {
     max-width: 960px;
     margin: 0 auto;
@@ -224,7 +225,7 @@ footer {
 footer p {
     display: inline-block;
     padding-top: 1.2em;
-    margin-top: 0 auto;
+    margin-top: 0;
 }
 
 @media only screen and (max-width:550px) {
