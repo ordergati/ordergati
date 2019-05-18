@@ -101,7 +101,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-
+    position:relative;
 }
 
 .slogan__img {
@@ -110,6 +110,7 @@
     flex: 1 1 595px;
     background-color: #99CCFF;
     overflow: hidden;
+    align-items: stretch;
 }
 
 .slogan__img img {
@@ -123,7 +124,6 @@
     flex: 1 1 365px;
     background-color: #fff;
     color: #9c6b39;
-
     overflow: hidden;
 }
 
